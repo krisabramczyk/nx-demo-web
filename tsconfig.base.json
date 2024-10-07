@@ -1,0 +1,35 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@core/application/pipes": ["libs/core/application/pipes/src/index.ts"],
+      "@core/application/sorting": [
+        "libs/core/application/sorting/src/index.ts"
+      ],
+      "@core/models": ["libs/core/models/src/index.ts"],
+      "@feat1/application": ["libs/feature1/application/src/index.ts"],
+      "@feat1/infrastructure": ["libs/feature1/infrastructure/src/index.ts"],
+      "@feat1/models": ["libs/feature1/models/src/index.ts"],
+      "@feat1/pages": ["libs/feature1/pages/src/index.ts"],
+      "@feat1/ui": ["libs/feature1/ui/src/index.ts"],
+      "@feat2/models": ["libs/feature2/models/src/index.ts"],
+      "@feat2/ui": ["libs/feature2/ui/src/index.ts"],
+      "@feat3/infrastructure": ["libs/feature3/infrastructure/src/index.ts"],
+      "@feat3/ui/widget": ["libs/feature3/ui/widget-feat3/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

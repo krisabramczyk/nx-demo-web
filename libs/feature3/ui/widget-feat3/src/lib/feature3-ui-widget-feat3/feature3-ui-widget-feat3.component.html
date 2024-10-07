@@ -1,0 +1,10 @@
+<p>feature3-ui-widget-feat3 works!</p>
+<lib-feat2-widget></lib-feat2-widget>
+<ng-content></ng-content>
+<ul>
+  <li *ngFor="let company of companies$ | async | simpleSort">
+    @let cmp = $any(company);
+    {{company.id}} -> {{cmp.name}}, {{cmp.address}}, {{cmp.phone || '-'}}
+  </li>
+</ul>
+<lib-feature1-ui></lib-feature1-ui>

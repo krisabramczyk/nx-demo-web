@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let user of users">
+    <span>{{user.login}} - {{user.email}}</span>
+<!--    This routing should be replaced with a core navigation service-->
+    <a  [routerLink]="'/org-feature1/' + user.id" style="margin-left: 20px">VIEW</a>
+    <a  [routerLink]="'/org-feature1/edit/' + user.id " style="margin-left: 20px">EDIT</a>
+  </li>
+</ul>
